@@ -1,0 +1,186 @@
+*{
+    margin:0;
+    padding:0;
+    text-decoration:none;
+    list-style-type:none;
+    font-family: Verdana, Arial, sans-serif;
+    color: black;
+}
+.content{
+    width:1000px;
+    margin: auto;
+    padding:0 20px;
+    box-sizing:border-box;
+}
+h1
+{
+    display: none;
+}
+header, footer
+{
+    height: 60px;
+    background-color: #A5CC5B;
+}
+header li
+{
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid rgba(0,0,0,0);
+    margin: 0 20px;
+}
+header li a
+{
+    color: #4d4d4d;
+}
+
+header li:hover
+{
+    border: 1px solid #61861F;
+    border-radius: 10px;
+    outline: none;
+    background-color: #EAEDA4;
+}
+header, ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+.play
+{
+    background: url(images/background/background_body.jpg) repeat-x;       
+}
+.play .content
+{
+    position: relative; 
+}
+.play a 
+{
+    display: block;
+    height: 50px;
+    width: 250px;
+    border: 2px solid #61861F;
+    background-color: #A5CC5B;
+    border-radius: 15px;
+    outline: none;
+    position: absolute;
+    top: 140px;
+    left: 395px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    animation: pulse 5s infinite;
+}
+.play a:hover
+{
+    background-color: #61861F; 
+    color: #EAEDA4;
+}
+@keyframes pulse {
+    from {
+      transform: scale3d(1, 1, 1);
+    }
+  
+    10% {
+      transform: scale3d(1.05, 1.05, 1.05);
+    }
+  
+    20% {
+      transform: scale3d(1, 1, 1);
+    }
+  }
+.tasks
+{
+    background: url(images/background/snow_background.png);
+    padding: 100px 0;
+    text-align: center;
+}
+.wrapper_task
+{
+    display: inline-block;
+    width: 49%;
+    margin: 20px 0;
+}
+.wrapper_task h3
+{
+    margin-bottom: 10px;
+    color: #61861F;
+    font-size: 18px;
+}
+h2
+{
+    font-size: 30px;
+    color: #61861F;
+    text-shadow: 1px 1px black;
+    font-weight: bold;
+    padding: 20px 0 10px 0;
+}
+.screenshots
+{
+    text-align: center;
+    background: url(images/background/background_top.jpg);
+    padding: 100px 0;
+}
+.screenshots img
+{
+    margin: 10px 0;
+}
+.developer img
+{
+    border-radius: 50%;
+    margin: 10px 0; 
+}
+.developer
+{
+    text-align: center;
+    background: url(images/background/snow_background.png);
+    padding: 100px 0;
+}
+.developer p 
+{
+    font-size: 18px;
+}
+.developer a
+{
+    display:block;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    color: white;
+    background: black;
+    line-height: 30px;
+    margin: auto;
+}
+.developer a:hover
+{
+    background: #61861F;
+}
+.developer a i 
+{
+    color: white;
+}
+.developer img + p
+{
+    margin-bottom: 10px;
+}
+footer p
+{
+    line-height: 60px;
+    text-align: center;
+    color: #4d4d4d;    
+}
+.about_game
+{
+    text-align: center;
+    padding: 100px 0;
+    background: url(images/background/background_task.jpg);
+}
+.about_game p
+{
+    width: 500px;
+    border: 2px solid #61861F;
+    background: #EAEDA4;
+    border-radius: 20px;
+    padding: 20px;
+    margin: auto;
+}
