@@ -4,7 +4,7 @@ import "./style.css";
 import {get_result_from_player_rebus} from "./get_result_from_player_rebus.js"
 export function create_task_rebus(){
     const wrapper_screen_task = document.getElementById("wrapper_screen_task");
-    const number_position =  Math.floorм(Math.random() * arr_rebus.rebus.length);
+    const number_position =  Math.floor(Math.random() * arr_rebus.rebus.length);
 
     const rebus_for_player = arr_rebus.rebus[number_position][0];
     const translate_of_rebus = arr_rebus.rebus[number_position][1];
