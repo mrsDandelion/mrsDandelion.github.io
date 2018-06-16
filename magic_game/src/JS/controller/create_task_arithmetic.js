@@ -47,7 +47,7 @@ export function create_task_arithmetic(){
     }
     function get_operation(){
         const arr_operation = ["+", "-", "*", "/"];
-        const number_operation = Math.floor(create_random_number(3));
+        const number_operation = Math.floor(create_random_number(4));
         return arr_operation[number_operation];
     }
 }
