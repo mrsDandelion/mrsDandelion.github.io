@@ -12,7 +12,7 @@ export function check_hp_monster(){
         localStorage.setItem("current_player_magic-game",JSON.stringify(current_player));
         
         const wrapper_monster = document.querySelector(".wrapper_monster");
-        wrapper_monster.classList.add("animation_opacity");
+        wrapper_monster.classList.add("monster_animation_opacity");
         setTimeout(() => {
             wrapper_monster.remove();
             create_wrapper_monster();

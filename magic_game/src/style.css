@@ -278,6 +278,10 @@ input[type = "radio"] + label img
   {
       animation: animation_opacity 1s;
   }
+  monster_animation_opacity
+  {
+    animation: animation_opacity 1s forwards;
+  }
   @keyframes animation_opacity_in {
     from {
       opacity: 0;
