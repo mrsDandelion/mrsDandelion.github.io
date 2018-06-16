@@ -11,7 +11,5 @@ export function get_result_from_player(right_answer){
     }else{
         answer_from_player = "Неверно"; 
     }
-    console.log(right_answer);
-    console.log(answer_from_player);
     check_result_tasks([right_answer, answer_from_player, 15]);
 }
