@@ -1,0 +1,33 @@
+div.wrapper_rain
+  {
+      background-image: url(../../../../images/background/rain.png);
+      position: absolute;
+      top:0;
+      height: 100vh;
+      width: 100vw;
+  }
+
+  .lightning
+  {
+      background: url(../../../../images/background/lightning.png) no-repeat center top;
+      animation: create_lightning 3s;
+  }
+  @keyframes create_lightning
+  {
+      from
+      {
+        background: url(../../../../images/background/lightning.png) no-repeat center top;  
+      }
+      25%
+      {
+        background: none;
+      }
+      50%
+      {
+        background: url(../../../../images/background/lightning.png) no-repeat center top;
+      }
+      to
+      {
+        background: none;
+      }
+  }

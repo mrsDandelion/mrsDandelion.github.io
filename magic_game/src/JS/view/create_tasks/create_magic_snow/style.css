@@ -1,0 +1,49 @@
+
+.snowball
+{
+    position: absolute;
+    top: -200px;
+    animation: create_snowball 2s forwards;
+    z-index: 10;
+    right: 50px;
+}
+div.wrapper_snow
+{
+    background-image: url(../../../../images/background/snow_background.png);
+    position: absolute;
+    top:0;
+    height: 100vh;
+    width: 100vw;
+}
+  @keyframes create_snowball
+  {
+    to
+      {
+        top: 400px;
+      }
+  }
+  .snowball img:first-of-type
+  {
+    transform-origin: 100% 100%;
+    animation: create_first_snowball 1s 2s forwards;
+  }
+  .snowball img:last-of-type
+  {
+    transform-origin: 0 100%;
+    animation: create_second_snowball 1s 2s forwards; 
+  }
+  @keyframes create_first_snowball
+  {
+    to
+      {
+        transform: rotate(-30deg);
+      }
+  }
+  @keyframes create_second_snowball
+  {
+    to
+      {
+        transform: rotate(30deg);
+      }
+  }
+ 

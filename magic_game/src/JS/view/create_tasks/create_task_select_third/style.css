@@ -1,0 +1,56 @@
+.form_task_select_third
+{
+    width: 800px;
+    height: 50vh;
+    position: absolute;
+    top: 25vh;
+    background-color: white;
+    border: 5px solid #61861F;
+    border-radius: 20px;
+    right: calc(50vw - 400px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;    
+}
+.form_task_select_third input:checked + label
+{    
+    background-color: #E2D8A5;
+}
+.form_task_select_third label
+{
+    border: 1px solid rgba(0,0,0,0);
+    padding: 20px; 
+    border: 1px solid #61861F;   
+    border-radius: 10px;
+    cursor: pointer;    
+    margin: 0 20px;
+}
+.form_task_select_third>div
+{
+    margin: 40px;
+}
+.form_task_select_third p 
+{
+    display: inline-block;
+    
+}
+.form_task_select_third input[type = "submit"]
+{
+    height: 50px;
+    width: 200px;
+    border-radius: 10px;
+    background-color: #85ad3d;
+    outline: none;
+    border: 1px solid #61861F;
+}
+.form_task_select_third input[type = "submit"]:hover
+{
+  background-color:#61861F;
+  color: #E2D8A5;  
+}
+.form_task_select_third>p:first-of-type
+{
+    font-size: 16px;  
+    font-weight: bold;   
+}

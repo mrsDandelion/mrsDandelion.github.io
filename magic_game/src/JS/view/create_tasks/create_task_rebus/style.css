@@ -1,0 +1,49 @@
+.form_task_rebus
+{
+    width: 800px;
+    height: 70vh;
+    position: absolute;
+    top: 15vh;
+    background-color: white;
+    border: 5px solid #61861F;
+    border-radius: 20px;
+    right: calc(50vw - 400px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;    
+}
+.form_task_rebus input[type = "text"]
+{
+    height: 20px;
+    width: 200px;
+    border-radius: 5px;
+    border: 1px solid #61861F;
+    background-color: #f9ebd5;
+    padding: 10px;
+    outline: none;
+    margin-bottom: 30px;
+}
+.form_task_rebus input[type = "text"]:focus
+{
+    background-color: white;
+}
+.form_task_rebus input[type = "submit"]
+{
+    height: 50px;
+    width: 200px;
+    border-radius: 10px;
+    background-color: #85ad3d;
+    outline: none;
+    border: 1px solid #61861F;
+}
+.form_task_rebus input[type = "submit"]:hover
+{
+  background-color:#61861F;
+  color: #E2D8A5;  
+}
+.form_task_rebus p:first-of-type
+{
+    font-size: 16px;  
+    font-weight: bold;   
+}

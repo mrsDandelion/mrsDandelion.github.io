@@ -1,0 +1,58 @@
+.form_task_comparison
+{
+    width: 800px;
+    height: 50vh;
+    position: absolute;
+    top: 25vh;
+    background-color: #f9f3d5;
+    border: 5px solid #61861F;
+    border-radius: 20px;
+    right: calc(50vw - 400px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;    
+}
+.form_task_comparison input[type = "text"]
+{
+    height: 20px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #61861F;
+    background-color: #f9ebd5;
+    padding: 10px;
+    outline: none;
+    margin: 30px 15px;
+}
+.form_task_comparison input[type = "text"]:focus
+{
+    background-color: white;
+}
+.form_task_comparison input[type = "submit"]
+{
+    height: 50px;
+    width: 200px;
+    border-radius: 10px;
+    background-color: #85ad3d;
+    outline: none;
+    border: 1px solid #61861F;
+}
+.form_task_comparison input[type = "submit"]:hover
+{
+  background-color:#61861F;
+  color: #E2D8A5;  
+}
+.form_task_comparison>p
+{
+    font-size: 16px;    
+    margin-bottom: 20px;
+    font-weight: bold;  
+    line-height: 30px;
+    text-align: center;
+}
+.wrapper_values p
+{
+    display: inline-block;
+}
+  
+ 

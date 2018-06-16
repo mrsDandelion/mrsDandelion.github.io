@@ -1,0 +1,48 @@
+
+.form_task_puzzles 
+{
+    width: 70vw;
+    height:50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 30px;
+    border: 5px solid #61861F; 
+    flex-direction:column;  
+}
+.form_task_puzzles input[type="submit"]
+{
+    height: 50px;
+    width: 200px;
+    border-radius: 10px;
+    background-color: #85ad3d;
+    outline: none;
+    border: 1px solid #61861F;
+}
+.form_task_puzzles input[type="submit"]:hover
+{
+  background-color:#61861F;
+  color: #E2D8A5;  
+}
+.form_task_puzzles input[type="text"]
+{
+    height: 50px;
+    width: 250px;
+    border-radius: 10px;
+    border: 1px solid #85ad3d;
+    background-color: #fbf8ea;
+    outline: none;
+    margin: 30px 0 30px 0;
+    padding: 10px;
+}
+.form_task_puzzles input[type="text"]:focus
+{
+    background-color: white;
+}
+.form_task_puzzles p:first-of-type
+{
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}

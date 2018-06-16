@@ -1,0 +1,61 @@
+.spell_list
+{
+    position: absolute;
+    height: 100%;
+    top: 10px;
+    width: 100%;
+    z-index: 1;
+    background: url(../../../images/background/spell_list.png) no-repeat center;
+    text-align: center;
+    padding: 0 220px;
+    box-sizing: border-box;
+}
+.spell_list p
+{
+    font-size: 20px;
+    margin-top: 150px;
+    text-align: center;
+    font-weight: bold;
+    color: #61861F;
+}
+.spell_list>div
+{
+    width: 35%;
+    display: inline-block;
+    margin: 10px;
+    vertical-align: top;
+}
+.spell_list:last-child 
+{
+    display: block;
+}
+.spell_list:last-child input
+{
+    height: 50px;
+    width: 150px;
+    border: 2px solid #61861F;
+    background-color: #A5CC5B;
+    border-radius: 15px;
+    outline: none;
+    opacity: 0;
+    animation: fadeInDown 1s 1s forwards; 
+}
+.spell_list:last-child input:hover
+{
+    background-color: #61861F; 
+    color: #EAEDA4;
+}
+.spell_list input:checked + label
+{
+    display: inline-block;
+    border: 1px solid #61861F;
+    border-radius: 20px;
+    background-color: rgba(255,255,255,0.5)
+}
+.spell_list input + label
+{
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid rgba(0,0,0,0);
+    height: 200px;
+}

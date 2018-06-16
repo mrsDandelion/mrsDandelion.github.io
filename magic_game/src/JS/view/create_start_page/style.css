@@ -1,0 +1,24 @@
+.start_page
+{
+    opacity: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    animation: animation_opacity_in 1s ease-in forwards;
+}
+.start_page input[type = "submit"]
+{
+    height: 50px;
+    width: 200px;
+    border-radius: 10px;
+    background-color: #85ad3d;
+    outline: none;
+    border: 3px solid #61861F;
+}
+.start_page input[type = "submit"]:hover
+{
+  background-color:#61861F;
+  color: #E2D8A5;  
+}

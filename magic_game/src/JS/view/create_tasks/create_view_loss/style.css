@@ -1,0 +1,36 @@
+.wrapper_view_loss
+  {
+    display: flex;
+    position: absolute;
+    top: 0;    
+    background: url(../../../../images/background/background_loss_area.jpg);
+    height: 100vh;
+    width: 100vw;
+    z-index: 2;
+    opacity: 0;
+    animation: animation_opacity_in 1s ease-in forwards;
+    justify-content: center;
+    align-items: center;
+  }
+  .wrapper_view_loss div
+  {
+    display: flex;
+    width: 800px;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f9f7ef;
+    border: 5px solid #61861F;
+    border-radius: 20px; 
+    opacity: 0;
+    animation: zoomIn 1s 1s  forwards;
+  }
+  .wrapper_view_loss p:last-of-type
+  {
+      font-weight: bold;
+  }
+  .wrapper_view_loss p
+  {
+      line-height: 30px;
+  }

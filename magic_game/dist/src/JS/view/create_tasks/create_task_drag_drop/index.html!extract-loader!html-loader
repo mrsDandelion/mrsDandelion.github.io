@@ -1,0 +1,4 @@
+<form class = "form_task_drag-drop fadeInDown" id = "form_task_drag-drop">
+    <p>Собери слово по буквам</p>
+    <input type = "submit" id = "submit_result_drag-drop" value = "Проверить!">
+</form>

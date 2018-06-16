@@ -1,0 +1,22 @@
+<p>Выбери заклинание</p>
+    <div class = "rain_spell first_spell">
+        <input type = "radio" name = "select_spell" id = "rain_spell" value = "rain_spell" checked>
+        <label for = "rain_spell">Заклинание дождя
+            <img src = "clouds.png" alt = "дождь">
+        </label>        
+    </div>
+    <div class = "rain_spell second_spell">        
+        <input type = "radio" name = "select_spell" id = "rain_spell2" value = "rain_spell">
+        <label for = "rain_spell2">Заклинание дождя
+            <img src = "clouds.png" alt = "дождь">
+        </label>
+    </div>
+    <div class = "rain_spell third_spell">        
+        <input type = "radio" name = "select_spell" id = "rain_spell3" value = "rain_spell">
+        <label for = "rain_spell3">Заклинание дождя
+            <img src = "clouds.png" alt = "дождь">
+        </label>
+    </div>
+    <div>
+        <input type = "submit" value = "Выбрать" id = "select_spell">
+    </div> 
