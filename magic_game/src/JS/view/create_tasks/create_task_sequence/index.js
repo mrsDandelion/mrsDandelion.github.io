@@ -4,7 +4,7 @@ import "./style.css";
 import {get_result_from_player} from "./get_result_from_player.js"
 export function create_task_sequence(){
     const wrapper_screen_task = document.getElementById("wrapper_screen_task");
-    const number_position =  Math.round(Math.random() * (arr_sequence.sequence.length - 1));
+    const number_position =  Math.floor(Math.random() * arr_sequence.sequence.length);
     const sequence_for_player = arr_sequence.sequence[number_position][0];
     const right_value = arr_sequence.sequence[number_position][1];
     

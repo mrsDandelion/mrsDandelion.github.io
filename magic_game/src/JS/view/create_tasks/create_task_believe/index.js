@@ -4,7 +4,7 @@ import "./style.css";
 import {get_result_from_player} from "./get_result_from_player.js"
 export function create_task_believe(){
     const wrapper_screen_task = document.getElementById("wrapper_screen_task");
-    const number_position =  Math.round(Math.random() * (arr_task_believe.task_believe.length-1));
+    const number_position =  Math.floor(Math.random() * arr_task_believe.task_believe.length);
 
     const current_arr = arr_task_believe.task_believe[number_position];
     const right_answer = current_arr[1];

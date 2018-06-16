@@ -4,7 +4,7 @@ import "./style.css";
 import {get_result_from_player} from "./get_result_from_player.js"
 export function create_task_dictionary_words(){
     const wrapper_screen_task = document.getElementById("wrapper_screen_task");
-    const number_position =  Math.round(Math.random() * (arr_dictionary.dictionary.length - 1));
+    const number_position =  Math.floor(Math.random() * arr_dictionary.dictionary.length);
     const letters_before = arr_dictionary.dictionary[number_position][0];
     const letters_after = arr_dictionary.dictionary[number_position][1];
     const right_value = arr_dictionary.dictionary[number_position][2];

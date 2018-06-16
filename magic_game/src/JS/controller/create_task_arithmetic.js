@@ -43,7 +43,7 @@ export function create_task_arithmetic(){
         return second_number;
     }
     function create_random_number (max_number){
-        return Math.floor(Math.random() * max_number);
+        return Math.floor(Math.random() * (max_number+1));
     }
     function get_operation(){
         const arr_operation = ["+", "-", "*", "/"];

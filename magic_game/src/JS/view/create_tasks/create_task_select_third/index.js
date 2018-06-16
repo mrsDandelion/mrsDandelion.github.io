@@ -4,7 +4,7 @@ import "./style.css";
 import {get_result_from_player} from "./get_result_from_player.js"
 export function create_task_select_third(){
     const wrapper_screen_task = document.getElementById("wrapper_screen_task");
-    const number_position =  Math.round(Math.random() * (arr_select_third.select_third.length-1));
+    const number_position =  Math.floor(Math.random() * arr_select_third.select_third.length);
 
     const current_arr = arr_select_third.select_third[number_position];
     const right_position = current_arr[3];

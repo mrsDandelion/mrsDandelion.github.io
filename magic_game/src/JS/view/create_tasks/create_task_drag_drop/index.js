@@ -7,7 +7,7 @@ import {create_drag_drops} from "./create_drag_drops";
 export function create_task_drag_drop(){
     
     const wrapper_screen_task = document.getElementById("wrapper_screen_task");
-    const number_position =  Math.floor(Math.random() * (arr_words.length-1));
+    const number_position =  Math.floor(Math.random() * arr_words.length);
     const word_for_player = arr_words[number_position];
 
     const arr_of_letters = word_for_player.split("");

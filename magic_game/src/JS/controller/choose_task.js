@@ -15,6 +15,6 @@ import {create_task_same_picture} from "../view/create_tasks/create_task_same_pi
 import {create_task_capitals} from "../view/create_tasks/create_task_capitals";
 export function choose_task(){
     const arr_tasks = [create_task_capitals,create_task_same_picture,create_task_sequence,create_task_accent,create_task_dictionary_words,create_task_believe,create_task_add_letters,create_task_questions,create_task_select_third,create_form_of_task_arith,create_task_drag_drop,create_task_translate,create_task_puzzles,create_task_rebus,create_task_comparison];
-    const number_position =  Math.round(Math.random() * (arr_tasks.length-1));
+    const number_position =  Math.floor(Math.random() * arr_tasks.length);
     arr_tasks[number_position]();
 }

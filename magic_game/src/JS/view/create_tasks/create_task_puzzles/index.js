@@ -4,7 +4,7 @@ import "./style.css";
 import {get_result_from_player_puzzle} from "./get_result_from_player_puzzle.js"
 export function create_task_puzzles(){
     const wrapper_screen_task = document.getElementById("wrapper_screen_task");
-    const number_position =  Math.round(Math.random() * puzzles.puzzles.length);
+    const number_position =  Math.floor(Math.random() * puzzles.puzzles.length);
 
     const puzzle_for_player = puzzles.puzzles[number_position][0];
     const answer_of_puzzle = puzzles.puzzles[number_position][1];

@@ -4,7 +4,7 @@ import "./style.css";
 import {get_result_from_player_translate} from "./get_result_from_player_translate.js"
 export function create_task_translate(){
     const wrapper_screen_task = document.getElementById("wrapper_screen_task");
-    const number_position =  Math.round(Math.random() * dictionary.dictionary.length);
+    const number_position =  Math.floor(Math.random() * dictionary.dictionary.length);
 
     const word_for_player = dictionary.dictionary[number_position][0];
     const translate_of_word = dictionary.dictionary[number_position][1];

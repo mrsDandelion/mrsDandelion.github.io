@@ -4,7 +4,7 @@ import "./style.css";
 import {get_result_from_player} from "./get_result_from_player.js"
 export function create_task_questions(){
     const wrapper_screen_task = document.getElementById("wrapper_screen_task");
-    const number_position =  Math.round(Math.random() * (arr_questions.questions.length-1));
+    const number_position =  Math.floor(Math.random() * arr_questions.questions.length);
 
     const current_arr = arr_questions.questions[number_position];
     const right_position = current_arr[4];
