@@ -1,0 +1,24 @@
+{
+    "name": "package.json",
+    "private": true,
+    "license": "ISC",
+    "dependencies": {
+        "css-loader": "^0.28.11",
+        "file-loader": "^1.1.11",
+        "html-loader": "^0.5.5",
+        "img-loader": "^3.0.0",
+        "style-loader": "^0.21.0",
+        "url-loader": "^1.0.1",
+        "webpack": "^4.10.1",
+        "webpack-dev-server": "^3.1.4"
+    },
+    "devDependencies": {
+        "webpack-cli": "^2.1.4"
+    },
+    "scripts": {
+        "start": "webpack-dev-server",
+        "dev": "webpack --mode development",
+        "build": "webpack --mode production",
+        "serv": "static build"
+    }
+}
