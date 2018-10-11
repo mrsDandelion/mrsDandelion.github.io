@@ -3,6 +3,7 @@ import Map from '../presentation/map'
 import { setInfo } from './../actions'
 import { setInfoFromMapGL } from './../actions'
 import { setNonexistentCity } from './../actions'
+import { changeHidden } from './../actions'
 
 
 const mapStateToProps = (state) => {  
@@ -19,6 +20,7 @@ const mapDispatchToProps = (dispatch) => {
     setInfo: info => {dispatch(setInfo(info))},
     setInfoFromMapGL: info => {dispatch(setInfoFromMapGL(info))},
     setNonexistentCity: () => {dispatch(setNonexistentCity())},
+    changeHidden: id => {dispatch(changeHidden(id))},
   }
 }
 const CreateMap = connect(

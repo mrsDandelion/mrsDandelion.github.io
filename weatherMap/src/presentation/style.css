@@ -1,4 +1,11 @@
-input
+.wrapperCheckbox
+{
+    position: absolute;
+    left:50px;
+    top:150px;
+    z-index: 1;
+}
+input[type = "text"]
 {
     border: none;
     position: absolute;
@@ -13,15 +20,15 @@ input
     color: #fff;
     outline: none;
 }
-input:focus
+input[type = "text"]:focus
 {
     background-color: rgba(0,0,0,0.2)
 }
-.existentCity
+input[type = "text"].existentCity
 {
     border: 1px solid blue;
 }
-.nonexistentCity
+input[type = "text"].nonexistentCity
 {
     border: 1px solid red;
 }

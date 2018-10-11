@@ -3,15 +3,23 @@ import {Component} from 'react';
 import ReactMapGL from 'react-map-gl';
 import FormSearch from './input';
 import DayWeather from './dayWeather'
+import CheckboxSelectDay from './checkboxSelectDay'
 import "./style.css";
 
 class Map extends Component {
   render() {
     return (
       <React.Fragment>
+          <div className = "wrapperCheckbox"> 
+            { this.props.listOfDays.map(day => {  
+                return <CheckboxSelectDay changeHidden = {this.props.changeHidden} key = {day.id} time = {day.dt_txt} id = {day.id}/>        
+            })}
+          </div>
           <div className = "wrapperWeather"> 
-            { this.props.listOfDays.map(day => {    
-              return <DayWeather weather = {day} key = {day.id}/>            
+            { this.props.listOfDays.map(day => {   
+              if(!day.hidden){
+                return <DayWeather weather = {day} key = {day.id} time = {day.id}/>   
+              }                       
             })}
           </div>        
           <FormSearch setInfo = {this.props.setInfo} setNonexistentCity = {this.props.setNonexistentCity} existentCity = {this.props.existentCity}/>
